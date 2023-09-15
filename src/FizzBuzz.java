@@ -4,8 +4,8 @@
 class FizzBuzz {
 
     public static void main(String[] args) {
-
-        for (int i = 1; i < 100; i++) {
+        int i = 1;
+        while (i < 100) {
 
             // Find out which numbers divide i.
             boolean divisibleBy3 = i % 3 == 0;
@@ -15,18 +15,19 @@ class FizzBuzz {
             if (divisibleBy3 && divisibleBy5) {
 
                 System.out.println("Fizz Buzz");
-
+                i = i + 1;
             } else if (divisibleBy3) {
 
                 System.out.println("Fizz");
-
+                i = i + 1;
             } else if (divisibleBy5) {
 
                 System.out.println("Buzz");
-
+                i = i + 1;
             } else {
 
                 System.out.println(i);
+                i = i + 1;
 
             }
         }
